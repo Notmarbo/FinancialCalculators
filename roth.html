@@ -39,7 +39,50 @@
   </header>
 
   <main>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolores beatae voluptatem quibusdam expedita quasi. Ipsam iusto ullam eligendi exercitationem, reprehenderit beatae asperiores dicta eius delectus libero repellat soluta adipisci!</p>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form class="mb-3">
+            <label for="downAmount" class="form-label">Starting Balance</label>
+            <input type="number" class="form-control" id="downAmount">
+          </form>
+          <form class="mb-3">
+            <label for="downAmount" class="form-label">Annual Contribution</label>
+            <input type="number" class="form-control" id="downAmount">
+          </form>
+          <form class="mb-3">
+            <label for="termAmount" class="form-label">Current Age</label>
+            <input type="number" class="form-control" id="termAmount">
+          </form>
+          <form class="mb-3">
+            <label for="termAmount" class="form-label">Retirement Age</label>
+            <input type="number" class="form-control" id="termAmount">
+          </form>
+          <form class="mb-3">
+            <label for="intrestAmount" class="form-label">Rate Of Return</label>
+            <input type="number" class="form-control" id="intrestAmount">
+          </form>
+          <form class="mb-3">
+            <label for="intrestAmount" class="form-label">Marginal Tax Rate</label>
+            <input type="number" class="form-control" id="intrestAmount">
+          </form>
+          <form class="mb-3">
+            <fieldset disabled>
+              <label for="monthlyRate" class="form-label">Total Contribution</label>
+              <input type="number" class="form-control" id="monthlyRate">
+            </fieldset>
+          </form>
+          <form class="mb-3">
+            <fieldset disabled>
+              <label for="monthlyRate" class="form-label">At Retirement Your IRA Balance Could Be Worth</label>
+              <input type="number" class="form-control" id="monthlyRate">
+            </fieldset>
+          </form>
+          <button class="btn btn-primary">Calculate</button>
+          <button id="Reset" type="reset" class="btn btn-dark">Reset</button>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
