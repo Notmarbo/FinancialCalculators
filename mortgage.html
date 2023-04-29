@@ -44,30 +44,32 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <form class="mb-3">
+          <form>
+          <div class="mb-3">
             <label for="loanAmount" class="form-label">Loan Amount</label>
             <input type="number" class="form-control" id="loanAmount">
-          </form>
-          <form class="mb-3">
+          </div>
+          <div class="mb-3">
             <label for="downAmount" class="form-label">Down payment</label>
             <input type="number" class="form-control" id="downAmount">
-          </form>
-          <form class="mb-3">
+          </div>
+          <div class="mb-3">
             <label for="termAmount" class="form-label">Loan Term</label>
             <input type="number" class="form-control" id="termAmount">
-          </form>
-          <form class="mb-3">
+          </div>
+          <div class="mb-3">
             <label for="intrestAmount" class="form-label">APR(Annual Percentage Rate)</label>
             <input type="number" class="form-control" id="intrestAmount">
-          </form>
-          <form class="mb-3">
+          </div>
+          <div class="mb-3">
             <fieldset disabled>
               <label for="monthlyRate" class="form-label">Monthly Rate</label>
               <input type="text" class="form-control" id="monthlyRate">
             </fieldset>
+          </div>
+            <button id="calculateBtn" type="button" class="btn btn-primary">Calculate</button>
+            <button id="reset" type="reset" class="btn btn-dark">Reset</button>
           </form>
-          <button id="calculateBtn" class="btn btn-primary">Calculate</button>
-          <button id="reset" type="reset" class="btn btn-dark">Reset</button>
         </div>
       </div>
     </div>
