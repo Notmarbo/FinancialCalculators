@@ -1,11 +1,11 @@
-"use strict"
+"use strict";
 
 let loanAmount = document.getElementById("loanAmount");
 let downAmount = document.getElementById("downAmount");
 let termAmount = document.getElementById("termAmount");
 let intrestAmount = document.getElementById("intrestAmount");
 let monthlyRate = document.getElementById("monthlyRate");
-let totalIntrest = document.getElementById("totalIntrest");
+let totalInterest = document.getElementById("totalInterest");
 const calculateBtn = document.getElementById("calculateBtn");
 
 window.onload = init;
@@ -44,16 +44,16 @@ function onCalculateBtnClciked() {
   //if an input is missing flash this error
   if (isNaN(loanAsNumber) || isNaN(downAsNumber) || isNaN(termAsNumber) || isNaN(interestAsNumber)) {
     monthlyRate.value = "Please Fill In All Fields";
-    totalIntrest.value = "Please Fill In All Fields";
+    totalInterest.value = "Please Fill In All Fields";
 
     //if all inputs are good, do math
   } else {
     //used math.pow to create powered values
     let monthly = (principal * interestAsNumber * Math.pow((1 + interestAsNumber), termInMonths)) / (Math.pow((1 + interestAsNumber), termInMonths) - 1);
-    let totalIntrestAmount = interestAsNumber * principal * termAsNumber;
-    console.log(totalIntrest);
+    let totalInterestAmount = interestAsNumber * principal * termAsNumber;
+    console.log(totalInterest);
     console.log(monthly);
     monthlyRate.value = monthly.toFixed(2);
-    totalIntrest.value = totalIntrestAmount.toFixed(2);
+    totalIntrest.value = totalInterestAmount.toFixed(2);
   }
 }
