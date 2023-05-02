@@ -40,11 +40,6 @@ function onCalculateBtnClciked() {
     let tax = taxAmount.value;
     let taxAsNumb = parseFloat(tax) / 100;
 
-    let total = totalContributed.value;
-    let totalContributedNumb = parseFloat(total);
-
-    let ira = iraReturn.value;
-    let iraReturnNumb = parseFloat(ira);
 
     if (isNaN(startBalanceNumb) || isNaN(annualContributionNumb) || isNaN(currentAgeNumb) || isNaN(retireAgeNumb) || isNaN(rateOfReturnNumb) || isNaN(taxAsNumb)) {
         totalContributed.value = "Please Fill In All Fields";

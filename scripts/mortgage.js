@@ -54,6 +54,6 @@ function onCalculateBtnClciked() {
     console.log(totalInterest);
     console.log(monthly);
     monthlyRate.value = monthly.toFixed(2);
-    totalIntrest.value = totalInterestAmount.toFixed(2);
+    totalInterest.value = totalInterestAmount.toFixed(2);
   }
 }
