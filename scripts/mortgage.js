@@ -3,7 +3,7 @@
 let loanAmount = document.getElementById("loanAmount");
 let downAmount = document.getElementById("downAmount");
 let termAmount = document.getElementById("termAmount");
-let intrestAmount = document.getElementById("intrestAmount");
+let interestAmount = document.getElementById("interestAmount");
 let monthlyRate = document.getElementById("monthlyRate");
 let totalInterest = document.getElementById("totalInterest");
 const calculateBtn = document.getElementById("calculateBtn");
@@ -31,9 +31,9 @@ function onCalculateBtnClciked() {
   let term = termAmount.value;
   let termAsNumber = parseFloat(term);
 
-  //intrest amount
-  let intrest = intrestAmount.value / 100 / 12;//annual rate to monthly rate
-  let interestAsNumber = parseFloat(intrest);
+  //interest amount
+  let interest = interestAmount.value / 100 / 12;//annual rate to monthly rate
+  let interestAsNumber = parseFloat(interest);
 
   //principal
   let principal = loanAsNumber - downAsNumber;
